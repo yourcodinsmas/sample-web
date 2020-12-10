@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>the new website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<section class="sec">
+	<header>
+		<a href="#"><img src="logo.png" class="logo"></a>
+		<ul>
+			<li><a href="#">home</a></li>
+			<li><a href="#">welcome</a></li>
+			<li><a href="#">page</a></li>
+			<li><a href="#">courses</a></li>
+			<li><a href="#">pepsi</a></li>
+		</ul>
+	</header>
+	<div class="content">
+		<div class="textBox">
+			<h2>welcome to nakshatra <br><span>I like</span></h2>
+			<p>There are many different definitions of computer programming, but Martin O'Hanlon's is simple. Watch his video to find out the three basic structures.
+</p>
+<a href="#">view all courses</a>
+		</div>
+		<div class="imgBox">
+		<img src="pepsi001.png" class="pepsi">	
+		</div>
+	</div>
+	<ul class="thumb">
+		<li><img src="pepsi001.png" onclick="imgSlider('pepsi001.png');changeBgColor('#0062be')"></li>
+		<li><img src="pepsi002.png" onclick="imgSlider('pepsi002.png');changeBgColor('#e60c2c')"></li>
+		<li><img src="pepsi003.png" onclick="imgSlider('pepsi003.png');changeBgColor('#1e1e1e')"></li>
+	</ul>
+	<ul class="sci">
+		<li><a href="#"><img src="facebook.png"></a></li>
+		<li><a href="#"><img src="twitter.png"></a></li>
+		<li><a href="#"><img src="instagram.png"></a></li>
+	</ul>
+</section>
+<script type="text/javascript">
+	function imgSlider(anything){
+		document.querySelector('.pepsi').src = anything;
+	}
+	function changeBgColor(color){
+		const sec = document.querySelector('.sec');
+		sec.style.background = color;
+	}
+</script>
+</body>
+</html>
